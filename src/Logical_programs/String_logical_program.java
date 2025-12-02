@@ -21,6 +21,11 @@ public class String_logical_program {
 		System.out.println("===============================================================");
 		obj.countvowelsandconsonent();
 		System.out.println("===============================================================");
+		obj.pallandrome();
+		System.out.println("===============================================================");
+		obj.reverseSentence();
+		System.out.println("===============================================================");
+
 
 
 
@@ -138,5 +143,29 @@ public class String_logical_program {
 
 	        System.out.println("vowel cout ="+vcount +" and consenent count ="+ ccount);
 	    }
+	 public  void pallandrome(){
+	        String org="NITIN";
+	        String rev="";
 
+	        for (int i=org.length()-1;i>=0;i--){
+	            rev=rev+org.charAt(i);
+	        }
+	        if(org.equals(rev))
+	            System.out.println("given string is pallandrome");
+
+	        else
+	            System.out.println("given string is  not pallandrome");
+	    }
+
+	 public void reverseSentence() {
+	        String org="Best of luck";
+	        String rev ="";
+	        String s1 [] =org.split(" ");
+	        for (int i=s1.length-1 ; i>=0; i--) {
+	        	
+	        	rev=rev+" "+s1[i];
+	        }
+            System.out.println(rev);
+	 }
+	 
 }
