@@ -17,8 +17,11 @@ public class String_logical_program {
 		System.out.println("===============================================================");
 		obj.reverseStringthirdway();
 		System.out.println("===============================================================");
-		obj.countCharactor("aSHVINnkumar");
+		obj.countCharactor("This is a very simple Sentence");
 		System.out.println("===============================================================");
+		obj.countvowelsandconsonent();
+		System.out.println("===============================================================");
+
 
 
 	}
@@ -99,17 +102,41 @@ public class String_logical_program {
 		System.out.println("Reverse value of Given string is :- " + s1.append(name).reverse());
 
 	}
-
+	
 	public void countCharactor(String name) {
 
 		int count = 0;
 
-		for (int i = 0; i <= name.length() - 1; i++) {
+		for (int i = 0; i < name.length(); i++) {
 
-			char newname = name.charAt(i);
+			if( name.charAt(i)!= ' ') {
 
 			count++;
 		}
-		System.out.println("Total charactor count in given String is " + count);
 	}
+		System.out.println("Total charactor count in given String is " + count);
+
+		}
+	
+	public void countvowelsandconsonent(){
+		
+		 String s1="This is a really simple sentence";
+	        s1=s1.toLowerCase();
+	        int vcount=0;
+	        int ccount=0;
+
+	        for(int i=0;i<s1.length(); i++){
+
+	            if(s1.charAt(i)=='a'|| s1.charAt(i)=='e'||s1.charAt(i)=='i'||s1.charAt(i)=='o'||s1.charAt(i)=='u'){
+	                vcount++;
+	            }
+	            else if(s1.charAt(i)>= 'a' && s1.charAt(i)<='z'){
+	                ccount++;
+	            }
+
+	        }
+
+	        System.out.println("vowel cout ="+vcount +" and consenent count ="+ ccount);
+	    }
+
 }
