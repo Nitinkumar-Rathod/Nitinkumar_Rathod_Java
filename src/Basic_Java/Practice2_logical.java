@@ -446,8 +446,8 @@ public class Practice2_logical {
 
 		 * 
 		 **
-		 * print half pyramid
-		 **
+		 ***      print half pyramid
+		 ****
 
 		 */
 
@@ -469,10 +469,10 @@ public class Practice2_logical {
 
 
 		/*
-		 **
-		 *   print pattern like this
-		 **
-		 *          */
+		****
+        ***
+        **
+        *        */
 		int row = 4;
 		int star = 4;
 		for (int i=1; i<=row ; i++) {
@@ -491,10 +491,9 @@ public class Practice2_logical {
 
 		/*         
 		 *
-		 **
-		 *  print pattern like this
-		 ** 
-		 */
+        **
+       ***
+      ****      */
 
 		int row = 4;
 		int star = 1;
@@ -520,10 +519,10 @@ public class Practice2_logical {
 	public void star6 () {
 
 		/*
-		 **
-		 *  print pattern like this
-		 **
-		 * 
+		 ****
+          ***
+           **
+            *
 		 */
 
 		int row = 4;
@@ -550,10 +549,10 @@ public class Practice2_logical {
 	public void star7 () {
 
 		/*
-		 * 
-		 *
-		 *** 
-		 *** 	
+		  *
+         ***
+        *****
+       *******	
 		 */
 		int row = 4;
 		int star = 1;

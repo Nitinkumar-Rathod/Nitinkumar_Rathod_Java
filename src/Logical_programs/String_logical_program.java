@@ -25,8 +25,8 @@ public class String_logical_program {
 		System.out.println("===============================================================");
 		obj.reverseSentence();
 		System.out.println("===============================================================");
-
-
+		obj.uppercase_lowercase_count();
+		System.out.println("===============================================================");
 
 
 	}
@@ -107,65 +107,84 @@ public class String_logical_program {
 		System.out.println("Reverse value of Given string is :- " + s1.append(name).reverse());
 
 	}
-	
+
 	public void countCharactor(String name) {
 
 		int count = 0;
 
 		for (int i = 0; i < name.length(); i++) {
 
-			if( name.charAt(i)!= ' ') {
+			if (name.charAt(i) != ' ') {
 
-			count++;
+				count++;
+			}
 		}
-	}
 		System.out.println("Total charactor count in given String is " + count);
 
+	}
+
+	public void countvowelsandconsonent() {
+
+		String s1 = "This is a really simple sentence";
+		s1 = s1.toLowerCase();
+		int vcount = 0;
+		int ccount = 0;
+
+		for (int i = 0; i < s1.length(); i++) {
+
+			if (s1.charAt(i) == 'a' || s1.charAt(i) == 'e' || s1.charAt(i) == 'i' || s1.charAt(i) == 'o'
+					|| s1.charAt(i) == 'u') {
+				vcount++;
+			} else if (s1.charAt(i) >= 'a' && s1.charAt(i) <= 'z') {
+				ccount++;
+			}
+
 		}
-	
-	public void countvowelsandconsonent(){
-		
-		 String s1="This is a really simple sentence";
-	        s1=s1.toLowerCase();
-	        int vcount=0;
-	        int ccount=0;
 
-	        for(int i=0;i<s1.length(); i++){
+		System.out.println("vowel cout =" + vcount + " and consenent count =" + ccount);
+	}
 
-	            if(s1.charAt(i)=='a'|| s1.charAt(i)=='e'||s1.charAt(i)=='i'||s1.charAt(i)=='o'||s1.charAt(i)=='u'){
-	                vcount++;
-	            }
-	            else if(s1.charAt(i)>= 'a' && s1.charAt(i)<='z'){
-	                ccount++;
-	            }
+	public void pallandrome() {
+		String org = "NITIN";
+		String rev = "";
 
-	        }
+		for (int i = org.length() - 1; i >= 0; i--) {
+			rev = rev + org.charAt(i);
+		}
+		if (org.equals(rev))
+			System.out.println("given string is pallandrome");
 
-	        System.out.println("vowel cout ="+vcount +" and consenent count ="+ ccount);
-	    }
-	 public  void pallandrome(){
-	        String org="NITIN";
-	        String rev="";
+		else
+			System.out.println("given string is  not pallandrome");
+	}
 
-	        for (int i=org.length()-1;i>=0;i--){
-	            rev=rev+org.charAt(i);
-	        }
-	        if(org.equals(rev))
-	            System.out.println("given string is pallandrome");
+	public void reverseSentence() {
+		String org = "Best of luck";
+		String rev = "";
+		String s1[] = org.split(" ");
+		for (int i = s1.length - 1; i >= 0; i--) {
 
-	        else
-	            System.out.println("given string is  not pallandrome");
-	    }
+			rev = rev + " " + s1[i];
+		}
+		System.out.println(rev);
+	}
 
-	 public void reverseSentence() {
-	        String org="Best of luck";
-	        String rev ="";
-	        String s1 [] =org.split(" ");
-	        for (int i=s1.length-1 ; i>=0; i--) {
-	        	
-	        	rev=rev+" "+s1[i];
-	        }
-            System.out.println(rev);
-	 }
-	 
+	public void uppercase_lowercase_count() {
+
+		String text = "hJHGjhdJHJhdnbdGJfGrJ";
+		int upper = 0;
+		int lower = 0;
+
+		for (int i = 0; i < text.length(); i++) {
+
+			char charvalue = text.charAt(i);
+			if (Character.isUpperCase(charvalue)) {
+				upper++;
+			} else if (Character.isLowerCase(charvalue)) {
+				lower++;
+			}
+		}
+		System.out.println("Total upper case char count is :-" + upper);
+		System.out.println("Total lower case char count is :-" + lower);
+	}
 }
