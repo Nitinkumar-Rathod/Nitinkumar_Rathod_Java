@@ -1,4 +1,4 @@
-package Basic_Java;
+package Logical_programs;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -7,10 +7,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-public class Practice2_logical {
+public class All_logical_programs {
 	public static void main(String[] args) {
 
-		Practice2_logical n1 = new Practice2_logical ();
+		All_logical_programs n1 = new All_logical_programs ();
 
 		n1.commen_element();
 		n1.even_odd();
@@ -181,7 +181,7 @@ public class Practice2_logical {
 
 		// find the occurance of number from given array
 
-		int ar1 [] = { 11,11,22,33,44,55,33,33,55};
+		int ar1 [] = { 11,11,22,33,22,44,55,33,33,55};
 
 		HashMap <Integer,Integer> map = new HashMap <>();
 

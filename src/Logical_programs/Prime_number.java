@@ -1,27 +1,26 @@
 package Logical_programs;
 
 public class Prime_number {
-	
+
 	public static void main(String[] args) {
-		
-		int number = 11;
-		boolean isPrime = true;
-		for(int i=0; i<number ; i++) {
-			
+
+		int number = 8;
+		int count = 0;
+		for (int i = 2; i < number; i++) {
+
 			if (number % i == 0) {
-				
-				isPrime = false;
+
+				count++;
 				break;
 			}
 		}
-		if(isPrime) {
-			
-			System.out.println("Given number is prime number");
-		}
-		else {
+		if (count == 1) {
+
 			System.out.println("Given number is not a prime number");
+		} else {
+			System.out.println("Given number is a prime number");
 
 		}
-		
+
 	}
 }
