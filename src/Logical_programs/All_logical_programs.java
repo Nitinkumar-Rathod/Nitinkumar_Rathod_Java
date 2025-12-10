@@ -50,11 +50,11 @@ public class All_logical_programs {
 		int ar2 [] = {1,3,5,8,9};
 		HashSet <Integer> set= new HashSet<>();
 		int count =0;
-		for (int i=0; i<=ar1.length-1; i++) {
+		for (int i=0; i<ar1.length; i++) {
 
 			set.add(ar1[i]);
 		}
-		for(int a=0; a<=ar2.length-1; a++) {
+		for(int a=0; a<ar2.length; a++) {
 
 			if(set.contains(ar2[a])) {
 				count++;
@@ -172,7 +172,7 @@ public class All_logical_programs {
 
 			System.out.println(keys + ":" + map.get(keys));
 		}
-		System.out.println(("the perticular char i comes " + map.get('i') + " times"));
+		System.out.println(("the perticular char i comes " + map.get('i') + "  times "));
 
 		System.out.println("=============================================================================");
 

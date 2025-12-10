@@ -9,6 +9,8 @@ public class String_logical_program {
 		System.out.println("===============================================================");
 		obj.spaceCount();
 		System.out.println("===============================================================");
+		spaceCountSecondway();
+		System.out.println("===============================================================");
 		obj.word_countFromString();
 		System.out.println("===============================================================");
 		obj.reverseString();
@@ -22,6 +24,8 @@ public class String_logical_program {
 		obj.countvowelsandconsonent();
 		System.out.println("===============================================================");
 		obj.pallandrome();
+		System.out.println("===============================================================");
+		palindromesecondway ();
 		System.out.println("===============================================================");
 		obj.reverseSentence();
 		System.out.println("===============================================================");
@@ -57,6 +61,21 @@ public class String_logical_program {
 		System.out.println("Total count of space in Given String is :- " + count);
 
 	}
+public static void spaceCountSecondway() { 
+		
+		// count the space from the given string
+		
+		String name = "n n Hd y h  s TR";
+		int count = 0;
+        char ar1[]= name.toCharArray();
+        
+        for (char arr:ar1) {
+        	if(arr == ' ') {
+        		count++;
+        	}
+        }
+        System.out.println(count);
+ }
 
 	public void word_countFromString() {
 		int count = 1;
@@ -156,6 +175,22 @@ public class String_logical_program {
 
 		else
 			System.out.println("given string is  not pallandrome");
+	}
+	public static void palindromesecondway() { 
+		// CHECK THE GIVEN sTRING IS PALINDROME OR NOT
+		String name = "NITIN";
+		
+		StringBuilder str = new StringBuilder ();
+		StringBuilder rev=str.append(name).reverse();
+		
+		if (rev.toString().equals(name)) {  //StringBuilder.equals() object reference compare karta hai, content compare nahi karta. manhun tostring use kel
+			
+			System.out.println("The given String is a palindrome");
+		}
+		else {
+			System.out.println("The given String is not a palindrome");
+
+		}
 	}
 
 	public void reverseSentence() {
