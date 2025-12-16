@@ -17,9 +17,7 @@ public class sample2 {
 			System.out.print(ar1[i][a]);
 		}
 		System.out.println(" ");
-		
 	}
-	
 	}
 
 }

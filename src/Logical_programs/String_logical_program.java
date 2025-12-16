@@ -21,17 +21,18 @@ public class String_logical_program {
 		System.out.println("===============================================================");
 		obj.countCharactor("This is a very simple Sentence");
 		System.out.println("===============================================================");
+		obj.countCharactor2ndway("My name is Nitinkumar Rathod");
+		System.out.println("===============================================================");
 		obj.countvowelsandconsonent();
 		System.out.println("===============================================================");
 		obj.pallandrome();
 		System.out.println("===============================================================");
-		palindromesecondway ();
+		palindromesecondway();
 		System.out.println("===============================================================");
 		obj.reverseSentence();
 		System.out.println("===============================================================");
 		obj.uppercase_lowercase_count();
 		System.out.println("===============================================================");
-
 
 	}
 
@@ -61,21 +62,22 @@ public class String_logical_program {
 		System.out.println("Total count of space in Given String is :- " + count);
 
 	}
-public static void spaceCountSecondway() { 
-		
+
+	public static void spaceCountSecondway() {
+
 		// count the space from the given string
-		
+
 		String name = "n n Hd y h  s TR";
 		int count = 0;
-        char ar1[]= name.toCharArray();
-        
-        for (char arr:ar1) {
-        	if(arr == ' ') {
-        		count++;
-        	}
-        }
-        System.out.println(count);
- }
+		char ar1[] = name.toCharArray();
+
+		for (char arr : ar1) {
+			if (arr == ' ') {
+				count++;
+			}
+		}
+		System.out.println(count);
+	}
 
 	public void word_countFromString() {
 		int count = 1;
@@ -114,7 +116,7 @@ public static void spaceCountSecondway() {
 
 		for (int i = newname.length - 1; i >= 0; i--) {
 
-			rev = rev + name.charAt(i);
+			rev = rev + newname[i];
 		}
 		System.out.println("Reverse value of Given string is :- " + rev);
 	}
@@ -139,6 +141,13 @@ public static void spaceCountSecondway() {
 			}
 		}
 		System.out.println("Total charactor count in given String is " + count);
+
+	}
+
+	public void countCharactor2ndway(String name) {
+
+		String text = name.replaceAll("\\s+", "");
+		System.out.println("Total char count is " + text.length());
 
 	}
 
@@ -176,18 +185,19 @@ public static void spaceCountSecondway() {
 		else
 			System.out.println("given string is  not pallandrome");
 	}
-	public static void palindromesecondway() { 
+
+	public static void palindromesecondway() {
 		// CHECK THE GIVEN sTRING IS PALINDROME OR NOT
 		String name = "NITIN";
-		
-		StringBuilder str = new StringBuilder ();
-		StringBuilder rev=str.append(name).reverse();
-		
-		if (rev.toString().equals(name)) {  //StringBuilder.equals() object reference compare karta hai, content compare nahi karta. manhun tostring use kel
-			
+
+		StringBuilder str = new StringBuilder();
+		StringBuilder rev = str.append(name).reverse();
+
+		if (rev.toString().equals(name)) { // StringBuilder.equals() object reference compare karta hai, content compare
+											// nahi karta. manhun tostring use kel
+
 			System.out.println("The given String is a palindrome");
-		}
-		else {
+		} else {
 			System.out.println("The given String is not a palindrome");
 
 		}

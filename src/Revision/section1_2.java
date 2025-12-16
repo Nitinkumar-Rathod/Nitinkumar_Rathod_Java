@@ -524,7 +524,6 @@ System.out.println();
 			space --;;
 		}
 	
-	
 	}
 	
 	

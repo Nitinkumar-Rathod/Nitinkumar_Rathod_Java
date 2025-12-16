@@ -155,7 +155,11 @@ public void startsWithCount () {
 		}
 	}
 	System.out.println("The count of name starts with A is :- " +count);
+	System.out.println("=============================  Array done ==========================");
+
 	}
+
+
 
 }
 	
