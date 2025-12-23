@@ -88,7 +88,7 @@ public class Sample4 {
 		int count = 0;
 
 		HashSet<Integer> set = new HashSet<>();
-
+		
 		for (int arr : ar1) {
 
 			set.add(arr);
