@@ -9,6 +9,7 @@ public class HAshMap_logical_program {
 		occuranceofNumber ();
 		occuranceofCharacter();
 		occuranceofString();
+		occurance2ndway();
 	}
 	
 	
@@ -97,7 +98,19 @@ public class HAshMap_logical_program {
 	}
 
 		
+	public static void occurance2ndway () {
+
+
+		String ar1 [] = {"Apple","Banana" , "Mango" , "Orange", "Banana","Mango","Banana"};
 		
+		HashMap<String , Integer> map = new HashMap <> ();
+		
+		 for (String arr : ar1) {
+
+	            map.put(arr, map.getOrDefault(arr, 0) + 1);
+	        }
+		System.out.println(map);
+	}
 		
 		
 		

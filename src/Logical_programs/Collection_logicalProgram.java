@@ -1,5 +1,6 @@
 package Logical_programs;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class Collection_logicalProgram {
@@ -22,6 +23,6 @@ public class Collection_logicalProgram {
 		}
 		System.out.println("Unique value from given arrays are :- " + set);
 	}
-
-     
+	
+	
 }
